@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="scss/custom.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+          integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous"/>
+
+    <title>Argos Check Character Calculator</title>
+</head>
+<body>
+
+<div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="px-0 px-sm-3 container-sm">
+            <span class="navbar-brand mb-0 h1">Check Character Calculator</span>
+        </div>
+    </nav>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col">
+                <noscript>
+                    <div class="alert alert-danger" role="alert">
+                        <strong>Wait, stop!</strong> This tool will not work correctly because JavaScript is not enabled
+                        in your browser. Please enable JavaScript and try again. This message will remain until
+                        JavaScript is enabled. Refresh this page to check again.
+                    </div>
+                </noscript>
+
+                <h6 class="font-weight-bold mb-0">If you have a location you do not know the character for, you can
+                    type it below and this tool will calculate the the check character for you.</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="py-4 my-4 border-top border-bottom">
+                    <div class="col-md-10 offset-md-1 col-xl-6 offset-xl-3">
+                        <div class="arial text-center bg-warning shadow-lg">
+                            <div class="py-1">
+                                <div class="h1 p-2">
+                                    <label for="location" hidden>Location</label>
+                                    <input class="w-100 text-center bg-warning border-0 text-uppercase font-weight-bold"
+                                           type="text" id="location" maxlength="4" placeholder="Type Here">
+                                </div>
+                                <div>
+                                    "<span id="phonetic">NONE</span>"
+                                </div>
+                            </div>
+                            <div class="text-white bg-secondary p-1">
+                                Check: <span id="check">NONE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="mb-0">
+                    Please report any issues you have using this tool by
+                    <a class="text-decoration-none" href="mailto:webmaster@dylanw.net">emailing me</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-dark text-white flex-grow-1">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <h5>License</h5>
+                    <p>
+                        <span class="font-weight-bold">Copyright &copy; 2020 Dylan Wilson.</span> This program is free
+                        software: you can redistribute it and/or modify it under the terms of the GNU General Public
+                        License as published by the Free Software Foundation, either version 3 of the License, or (at
+                        your option) any later version. See the source (and full license) on
+                        <a href="https://gitlab.dylanwilson.dev/dylan/check-character-calculator"
+                           class="text-decoration-none">my GitLab <i class="fab fa-gitlab"></i></a>.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-monospace">Version 1.0.0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="js/functions.min.js"></script>
+</body>
+</html>
